@@ -12,7 +12,6 @@ import {
     TrendingUp,
     ChatBubbleOutline,
     WorkOutline,
-    TimelineOutlined,
     Report
 } from '@material-ui/icons';
 
