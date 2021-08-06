@@ -1,18 +1,22 @@
 import React from "react";
-import {PermIdentityOutlined, CalendarToday, PhoneAndroid, MailOutline, LocationSearching} from "@material-ui/icons";
+import {CalendarToday, Publish, LocationSearching, MailOutline, PermIdentityOutlined, PhoneAndroid} from "@material-ui/icons";
 import "./user.css"
+import {Link} from "react-router-dom";
 
 export default function User() {
     return (
         <div className="user">
-            <div className="userTitleContainer" >
+            <div className="userTitleContainer">
                 <h1 className="userTitle">Edit User</h1>
-                <button className="userAddButton">Create</button>
+                <Link to="/newUser">
+                    <button className="userAddButton">Create</button>
+                </Link>
             </div>
             <div className="userContainer">
                 <div className="userShow">
                     <div className="userShowTop">
-                        <img src="https://image.flaticon.com/icons/png/512/147/147144.png" alt="" className="userShowImg"/>
+                        <img src="https://image.flaticon.com/icons/png/512/168/168734.png" alt=""
+                             className="userShowImg"/>
                         <div className="userShowTopTitle">
                             <span className="userShowUsername">Anna Becker</span>
                             <span className="userShowUserTitle">Software Engineer</span>
@@ -44,6 +48,39 @@ export default function User() {
                     </div>
                 </div>
                 <div className="userUpdate">
+                    <span className="userUpdateTitle">Edit</span>
+                    <form className="userUpdateForm">
+                        <div className="userUpdateLeft">
+                            <div className="userUpdateItem">
+                                <label>Username</label>
+                                <input type="text" placeholder="annabeck99" className="userUpdateInput"/>
+                            </div>
+                            <div className="userUpdateItem">
+                                <label>Full Name</label>
+                                <input type="text" placeholder="Anna Beck" className="userUpdateInput"/>
+                            </div>
+                            <div className="userUpdateItem">
+                                <label>Email</label>
+                                <input type="email" placeholder="annabeck99@gmail" className="userUpdateInput"/>
+                            </div>
+                            <div className="userUpdateItem">
+                                <label>Phone</label>
+                                <input type="text" placeholder="+1 123 123 1234" className="userUpdateInput"/>
+                            </div>
+                            <div className="userUpdateItem">
+                                <label>Address</label>
+                                <input type="text" placeholder="New York | USA" className="userUpdateInput"/>
+                            </div>
+                        </div>
+                        <div className="userUpdateRight">
+                            <div className="userUpdateUpload">
+                                <img className="userUpdateImg" src="https://image.flaticon.com/icons/png/512/168/168734.png" alt=""/>
+                                <label htmlFor="file"><Publish className="userUpdateIcon"/></label>
+                                <input type="file" id="file" style={{display: "none"}}/>
+                            </div>
+                            <button className="userUpdateButton">Update</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
