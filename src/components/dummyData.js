@@ -48,3 +48,16 @@ export const data = [
         "Active Users": 3490,
     },
 ];
+
+export const userRows = [
+    { id: 1, username: 'Jon Snow', avatar: 'https://image.flaticon.com/icons/png/512/147/147144.png', email: "snow@gmail.com", status: "active", transaction: "$321.23" },
+    { id: 2, username: 'Jon Snow', avatar: 'https://image.flaticon.com/icons/png/512/147/147144.png', email: "snow@gmail.com", status: "active", transaction: "$321.23" },
+    { id: 3, username: 'Jon Snow', avatar: 'https://image.flaticon.com/icons/png/512/147/147144.png', email: "snow@gmail.com", status: "active", transaction: "$321.23" },
+    { id: 4, username: 'Jon Snow', avatar: 'https://image.flaticon.com/icons/png/512/147/147144.png', email: "snow@gmail.com", status: "active", transaction: "$321.23" },
+    { id: 5, username: 'Jon Snow', avatar: 'https://image.flaticon.com/icons/png/512/147/147144.png', email: "snow@gmail.com", status: "active", transaction: "$321.23" },
+    { id: 6, username: 'Jon Snow', avatar: 'https://image.flaticon.com/icons/png/512/147/147144.png', email: "snow@gmail.com", status: "active", transaction: "$321.23" },
+    { id: 7, username: 'Jon Snow', avatar: 'https://image.flaticon.com/icons/png/512/147/147144.png', email: "snow@gmail.com", status: "active", transaction: "$321.23" },
+    { id: 8, username: 'Jon Snow', avatar: 'https://image.flaticon.com/icons/png/512/147/147144.png', email: "snow@gmail.com", status: "active", transaction: "$321.23" },
+    { id: 9, username: 'Jon Snow', avatar: 'https://image.flaticon.com/icons/png/512/147/147144.png', email: "snow@gmail.com", status: "active", transaction: "$321.23" },
+    { id: 10, username: 'Jon Snow', avatar: 'https://image.flaticon.com/icons/png/512/147/147144.png', email: "snow@gmail.com", status: "active", transaction: "$321.23" },
+];
