@@ -8,6 +8,7 @@ import UserList from "./components/pages/userList/UserList";
 import User from "./components/pages/userPage/User";
 import NewUser from "./components/pages/newUser/NewUser";
 import ProductList from "./components/pages/productList/ProductList";
+import Product from "./components/pages/Product/Product";
 
 function App() {
     return (
@@ -21,6 +22,7 @@ function App() {
                     <Route exact path="/user/:userId" component={User}/>
                     <Route exact path="/newUser" component={NewUser}/>
                     <Route exact path="/products" component={ProductList}/>
+                    <Route exact path="/product/:productId" component={Product}/>
                 </Switch>
             </div>
         </Router>
